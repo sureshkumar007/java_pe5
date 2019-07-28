@@ -32,9 +32,9 @@ Check the null pointer exception in the string
         System.out.print(list);
         for(String element:strings) {
             if (!element.isEmpty()) {
-                if (!map.containsKey(element)) {
+               // if (!map.containsKey(element)) {
                     map.put(element, Collections.frequency(list, element));
-                }
+                //}
             }
         }
         return map;
